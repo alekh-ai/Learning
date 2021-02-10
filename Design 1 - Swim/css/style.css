@@ -1,0 +1,380 @@
+@charset "UTF-8";
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  background-color: #fff;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+sup {
+  font-size: 0.9rem;
+}
+
+nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding: 0 4em;
+  height: 7rem;
+  background-color: navajowhite;
+  background-color: #fff;
+}
+
+nav .brand {
+  margin: 2.5rem 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  justify-self: flex-start;
+  color: #4073de;
+}
+
+nav .brand a {
+  color: inherit;
+}
+
+nav .nav-menu {
+  margin-left: 9em;
+}
+
+nav .nav-menu li {
+  display: inline-block;
+  padding: 3rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+nav .nav-menu li.active {
+  color: #eee;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d430d480), color-stop(30%), color-stop(#1d65ff), to(#1d92ff));
+  background-image: linear-gradient(to bottom, #d430d480, 30%, #1d65ff, #1d92ff);
+}
+
+img {
+  width: 100%;
+}
+
+#Section-B {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+#Section-B .showcase .hero-image {
+  width: 100%;
+  height: auto;
+}
+
+#Section-B .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 3rem;
+  margin-top: -150px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#Section-B .card1, #Section-B .card2, #Section-B .card3, #Section-B .card4 {
+  width: 300px;
+  height: 350px;
+  border-radius: 5px;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd103), color-stop(30%), to(#ff8716));
+  background-image: linear-gradient(to bottom, #ffd103, 30%, #ff8716);
+}
+
+#Section-B .card1 .title, #Section-B .card2 .title, #Section-B .card3 .title, #Section-B .card4 .title {
+  font-size: 2.8rem;
+  padding: 0.5em;
+}
+
+#Section-B .card1 p, #Section-B .card2 p, #Section-B .card3 p, #Section-B .card4 p {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: #fff;
+  padding: 0 1rem;
+}
+
+#Section-B .card2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f169fd), color-stop(50%), to(#315ef1));
+  background-image: linear-gradient(to bottom, #f169fd, 50%, #315ef1);
+}
+
+#Section-B .card3 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f72b2b), color-stop(50%), to(#f52fda));
+  background-image: linear-gradient(to bottom, #f72b2b, 50%, #f52fda);
+}
+
+#Section-B .card4 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff4bc3), color-stop(50%), to(#b10fc7));
+  background-image: linear-gradient(to bottom, #ff4bc3, 50%, #b10fc7);
+}
+
+.box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 3rem 1rem;
+  margin: 0 3rem;
+}
+
+.box-container .box {
+  width: 610px;
+  height: auto;
+}
+
+.box-container .bulletin-box {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd103), color-stop(30%), to(#ff8716));
+  background-image: linear-gradient(to bottom, #ffd103, 30%, #ff8716);
+}
+
+.box-container .text-box {
+  padding: 2em;
+  background-color: #eee;
+}
+
+.box-container .text-box .title {
+  font-size: 2.8rem;
+  padding: 0.5em;
+}
+
+.box-container .text-box p {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: #333;
+  padding: 0 1rem;
+}
+
+.box-container .text-box button {
+  margin-left: 1rem;
+  min-width: 8em;
+  min-height: 3em;
+  font-size: 1.2em;
+}
+
+.box-container .image-box img {
+  width: 100%;
+}
+
+#Section-C {
+  margin: 4rem 0;
+}
+
+#Section-D {
+  margin: 4em 0;
+}
+
+#Section-D .showcase {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background-image: url("../img/img_7.jpg");
+}
+
+#Section-D .showcase .content {
+  position: absolute;
+  width: 500px;
+  height: 700px;
+  left: 3em;
+  top: 0;
+  z-index: 10;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f72b2bdd), color-stop(50%), to(#f52fdadd));
+  background-image: linear-gradient(to bottom, #f72b2bdd, 50%, #f52fdadd);
+}
+
+#Section-D .showcase .content .title {
+  margin: 2em 1em;
+  font-size: 2.5rem;
+}
+
+#Section-D .showcase .content p {
+  font-size: 1.3em;
+  padding: 0.5em 1.2em;
+  line-height: 1.3;
+}
+
+#Section-D .showcase .content button {
+  margin-left: 1rem;
+  min-width: 8em;
+  min-height: 3em;
+  font-size: 1.2em;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd103), color-stop(30%), to(#ff8716));
+  background-image: linear-gradient(to bottom, #ffd103, 30%, #ff8716);
+}
+
+#Section-E {
+  margin: 4em 0;
+}
+
+#Section-E .box-container .bulletin-box {
+  height: 467px;
+  padding: 3em;
+  color: #fff;
+}
+
+#Section-E .box-container .bulletin-box .title {
+  font-size: 2.8rem;
+  margin: 1em 0;
+}
+
+#Section-E .box-container .bulletin-box li {
+  position: relative;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin-left: 3em;
+  margin-bottom: 0.5rem;
+}
+
+#Section-E .box-container .bulletin-box li::before {
+  position: absolute;
+  left: -2em;
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+  content: "▲";
+}
+
+#Section-F {
+  margin: 4em 0;
+}
+
+#Section-F .testimon {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  margin: 0 3rem;
+  width: 98.5%;
+}
+
+#Section-F .testimon .person {
+  position: relative;
+  width: 250px;
+  height: 400px;
+  margin: 3em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+#Section-F .testimon .person::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+}
+
+#Section-F .testimon .person .photo {
+  position: relative;
+  top: -80px;
+  left: 50%;
+  top: center;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  margin: 1em 0;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+#Section-F .testimon .person .photo img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+
+#Section-F .testimon .person p {
+  margin: 0 1em;
+}
+
+#Section-F .testimon .person .detail {
+  margin: 2em 0;
+  font-size: 1.5em;
+  color: orangered;
+}
+
+#Section-G {
+  margin: 4em 0;
+}
+
+#Section-G .box-container .contact-box {
+  color: #fff;
+  background-color: #0094dc;
+  text-align: center;
+  padding: 3rem;
+}
+
+#Section-G .box-container .contact-box .title {
+  font-size: 3rem;
+  margin: 1em 0;
+}
+
+#Section-G .box-container .contact-box p {
+  font-size: 1.2rem;
+}
+
+button {
+  margin-top: 2em;
+  width: 8em;
+  height: 3em;
+  border: none;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f72b2bdd), color-stop(50%), to(#f52fdadd));
+  background-image: linear-gradient(to right, #f72b2bdd, 50%, #f52fdadd);
+}
+
+footer {
+  margin-top: 4em;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9em;
+  color: #444;
+}
+
+/*
+Section A:
+	nav: [flex]
+		brand
+		nav-menu
+
+Section B: [grid: 1fr, column, rows]
+	showcase
+		hero-image
+
+	cards <relative>: [grid: 4fr]
+		card 1
+		card 2
+		card 3
+		card 4
+
+
+*/
