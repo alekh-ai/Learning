@@ -10,25 +10,34 @@
 	<body>
 		<section id="Section-A">
 			<div id="app">
-				<div id="output" class="output">Calculator</div>
+				<div id="output" class="display">
+					<div class="history"></div>
+					<div class="current">CALCULATOR</div>
+				</div>
 				<div class="keypad">
 					<div id="actions">
-						<button id="action-clear">C</button>
-						<button id="action-add">+</button>
-						<button id="blank" disabled></button>
+						<button id="clear">C</button>
+						<button id="delete">Del</button>
+						<button id="result">=</button>
+					</div>
+					<div id="operator">
+						<button id="add" class="operator">+</button>
+						<button id="sub" class="operator">-</button>
+						<button id="mul" class="operator">&times;</button>
+						<button id="div" class="operator">/</button>
 					</div>
 					<div id="numpad">
-						<button id="num_1" onclick="sendNum(1)">1</button>
-						<button id="num_2" onclick="sendNum(2)">2</button>
-						<button id="num_3" onclick="sendNum(3)">3</button>
-						<button id="num_4" onclick="sendNum(4)">4</button>
-						<button id="num_5" onclick="sendNum(5)">5</button>
-						<button id="num_6" onclick="sendNum(6)">6</button>
-						<button id="num_7" onclick="sendNum(7)">7</button>
-						<button id="num_8" onclick="sendNum(8)">8</button>
-						<button id="num_9" onclick="sendNum(9)">9</button>
-						<button id="num_0" onclick="sendNum(0)">0</button>
-						<button id="action-result">=</button>
+						<button onclick="sendNum(1)">1</button>
+						<button onclick="sendNum(2)">2</button>
+						<button onclick="sendNum(3)">3</button>
+						<button onclick="sendNum(4)">4</button>
+						<button onclick="sendNum(5)">5</button>
+						<button onclick="sendNum(6)">6</button>
+						<button onclick="sendNum(7)">7</button>
+						<button onclick="sendNum(8)">8</button>
+						<button onclick="sendNum(9)">9</button>
+						<button onclick="sendNum(0)">0</button>
+						<button id="blank" disabled>Calculator</button>
 					</div>
 				</div>
 			</div>

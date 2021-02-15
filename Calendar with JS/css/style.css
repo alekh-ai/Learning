@@ -3,7 +3,6 @@
 	--secondary-color: #ffc75f;
 	--tertiary-color: #f9f871;
 	--accent-color: #ff5e78;
-	/* --background-color: #351f39; */
 	--background-color: #444;
 	--foreground-color: #fff;
 
@@ -18,7 +17,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "Quicksand", sans-serif;
+	font-family: "Fira Code", sans-serif;
 }
 
 html {
@@ -54,18 +53,26 @@ html {
 	align-items: center;
 	padding: 0 2rem;
 	text-align: center;
-	text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 	border-top-left-radius: var(--radius);
 	border-top-right-radius: var(--radius);
 }
 
 .month i {
 	font-size: 2.5rem;
+	padding: 0.35em 0.7em;
+	border-radius: 50%;
 	cursor: pointer;
+	text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+	transition-duration: 1.2s;
+}
+
+.month i:hover {
+	background-color: #ff5e7840;
+	text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 .month h1 {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
@@ -73,7 +80,8 @@ html {
 }
 
 .month p {
-	font-size: 1.6rem;
+	font-size: 3rem;
+	margin: 1rem 0;
 }
 
 .weekdays {
@@ -82,21 +90,21 @@ html {
 	padding: 0 0.4rem;
 	display: flex;
 	align-items: center;
+	background-color: #845ec2;
 }
 
 .weekdays div {
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	font-weight: 400;
 	letter-spacing: 0.1rem;
 	width: calc(44.2rem / 7);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
 .weekdays .sun {
-	color: var(--accent-color);
+	color: var(--secondary-color);
 }
 
 .days {
@@ -114,8 +122,10 @@ html {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
-	transition: background-color 0.2s;
+	/* transition: background-color 0.2s; */
+	transition: background-color 1s;
+	transition: border-radius 1s;
+	transition-delay: 10ms;
 }
 
 .days div:hover {
